@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ContainerHome = styled.div`
  width: 100%;
  display: flex;
+ flex-direction: column;
  max-width: 70rem;
  margin: 0 auto;
  justify-content: space-between;
@@ -10,6 +11,14 @@ export const ContainerHome = styled.div`
  & > img {
   padding-top: 5.75rem;
  }
+`;
+
+export const ContentHome = styled.div`
+ display: flex;
+ width: 100%;
+ flex: 1;
+ justify-content: space-between;
+ margin-bottom: 8rem;
 `;
 
 export const CoffeTextBox = styled.div`
@@ -71,4 +80,24 @@ export const IconRounded = styled(BaseIcon)<IIconRoundedProps>`
  align-items: center;
  justify-content: center;
  background-color: ${({ colorIcon ,theme }) => theme[colorOptions[colorIcon]]};
+`;
+
+export const OurCoffe = styled.p`
+ margin-bottom: 3.375rem;
+`;
+
+export const CardCoffe = styled.div`
+ width: 16rem;
+ height: 19.375rem;
+ background-color: ${({theme}) => theme["gray-200"]};
+ border-top-right-radius: 50px;
+ border-bottom-left-radius: 50px;
+`;
+
+export const ContentCoffes = styled.div`
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+ gap: 2rem;
+ margin-bottom: 9.8125rem;
 `;
